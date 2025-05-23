@@ -8,7 +8,7 @@ public class PruebasLista {
         Producto p1 = new Producto("Mesa escritorio", 185, 2);
         Producto p2 = new Producto("Silla oficina", 95.9f, 3);
         Producto p3 = new Producto("Mesa cocina", 125, 1);
-        Producto p4 = new Producto("Sillón reclinable", 230, 2);
+        Producto p4 = new Producto("Sillï¿½n reclinable", 230, 2);
 
         factura.anyadirProducto(p1);
         factura.anyadirProducto(p2);
@@ -23,7 +23,7 @@ public class PruebasLista {
         factura.mostrar();
 
         Producto p6 = new Producto("Silla oficina", 95.9f, 2);
-        Producto p7 = new Producto("Sillón reclinable", 230, 3);
+        //Producto p7 = new Producto("Sillï¿½n reclinable", 230, 3);
 
         System.out.println("Se han eliminado " + factura.eliminarProducto(p6) + " unidades");
         factura.mostrar();
@@ -44,7 +44,7 @@ public class PruebasLista {
         facturaBib.mostrar();
 
         LinkedList<Producto> caros = facturaBib.mayoresPrecios(250);
-        System.out.println("Se han obtenido " + caros.size() + " productos con precio mayor a 250 € por unidad");
+        System.out.println("Se han obtenido " + caros.size() + " productos con precio mayor a 250 ï¿½ por unidad");
 
         for (Producto p : caros) {
             p.mostrar();
